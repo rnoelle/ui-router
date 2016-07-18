@@ -5,16 +5,28 @@ angular.module('routerApp')
 
         $urlRouterProvider.otherwise("/");
 
-//       We need to configure our routes here
+        //We need to configure our routes here
 
-
+        $stateProvider
+          .state('home', {
+            url: "/",
+            templateUrl: "views/home.html"
+          })
+          .state('studio', {
+            url: "/studio",
+            templateUrl: "views/studio.html"
+          })
+          .state('projects', {
+            url: "/projects/:type",
+            templateUrl: "views/projects.html",
+            controller: "mainCtrl"
+          })
+          .state('pricing', {
+            url: "/pricing",
+            templateUrl: "views/pricing.html"
+          })
+          .state('contact', {
+            url: "/contact",
+            templateUrl: "views/contact.html"
+          });
 });
-
-
-
-
-
-
-
-
-

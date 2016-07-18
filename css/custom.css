@@ -11,3 +11,10 @@
     color: #fff;
     background: #ccc;
 }
+
+button {
+  width: 100%;
+  font-size: 1.5em;
+  padding: 30px;
+  color: #666;
+}
